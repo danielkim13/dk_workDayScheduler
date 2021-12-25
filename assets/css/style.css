@@ -1,5 +1,5 @@
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: Open Sans, sans-serif;
   font-size: 16px;
   line-height: 1;
 }
@@ -21,8 +21,14 @@ textarea {
   border-bottom: 10px solid black;
 }
 
+.jumbotron h1 {
+  font-family: "Caveat", Verdana, Geneva, Tahoma, sans-serif;
+}
+
 .current_day {
-  font-size: 25px;
+  font-family: "Amatic SC", tahoma, sans-serif;
+  font-size: 35px;
+  text-shadow: 1px 1px 2px black;
 }
 
 .description {
@@ -42,7 +48,7 @@ textarea {
 
 .hour {
   background-color: #ffffff;
-  color: #000000;  
+  color: #000000;
   border-top: 1px dashed #000000;
 }
 
