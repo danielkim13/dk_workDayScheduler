@@ -33,3 +33,24 @@ $("#hour_14 #text").val(localStorage.getItem("hour_14"));
 $("#hour_15 #text").val(localStorage.getItem("hour_15"));
 $("#hour_16 #text").val(localStorage.getItem("hour_16"));
 $("#hour_17 #text").val(localStorage.getItem("hour_17"));
+
+/* time color change. CSS already has selector .past  .present .future 
+initial thought process is based on current time, the textarea class 'description' needs to be substituted by the past/present/future class */
+// moment js to get current hour
+const currentHour = moment().hour();
+console.log(currentHour);
+// need to select the timeblock div and somehow extract the hour from the div id to compare it to currentHour..
+// const timeContainer = document.querySelector(".time-block");
+const timeBlock = $(".time-block");
+const timeContainer = timeBlock.attr("id").split("hour_")[1];
+console.log(timeContainer); // displays ['', '9'].. getting index of 1 got the value of hour.
+// need to find the textarea element.. child of timeblock div.
+const textAreaEl = timeBlock.children("#text");
+
+if (currentHour == timeContainer) {
+  textAreaEl.addClass("present");
+} else if (currentHour < timeContainer) {
+  TextAreaEl.addClass("past");
+} else {
+  TextAreaEl.addClass("future");
+}
