@@ -1,10 +1,12 @@
 # Work Day Scheduler Starter Code
+
 <h1 align="center">Hello! I'm Daniel Kim</h1>
 <h2 align="center">This is Challenge #5. I will build work day scheduler using third party APIs.</h2>
 
 <hr />
 
 ### 🔭 You may find the deployed application link is <mark>https://danielkim13.github.io/dk_workDayScheduler/</mark>
+
 ### 👨‍💻This project repo can be found at <mark>https://github.com/danielkim13/dk_workDayScheduler/</mark>
 
 ### 📫How to reach me **daniel.d.kim13@gmail.com**
@@ -56,4 +58,4 @@
 
 ### ScreenShot
 
-![](gif file here)
+![](./img/workDaySchedule.png)
