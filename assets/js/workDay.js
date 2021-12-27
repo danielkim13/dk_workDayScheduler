@@ -24,15 +24,11 @@ function saveSchedule() {
 $(".saveBtn").on("click", saveSchedule);
 // initial display of local storage if there is data in the localStorage.
 // each key needs to be pulled into display. jQuery $ selector of parent id child id val.. get the value from the storage?
-$("#hour_9 #text").val(localStorage.getItem("hour_9"));
-$("#hour_10 #text").val(localStorage.getItem("hour_10"));
-$("#hour_11 #text").val(localStorage.getItem("hour_11"));
-$("#hour_12 #text").val(localStorage.getItem("hour_12"));
-$("#hour_13 #text").val(localStorage.getItem("hour_13"));
-$("#hour_14 #text").val(localStorage.getItem("hour_14"));
-$("#hour_15 #text").val(localStorage.getItem("hour_15"));
-$("#hour_16 #text").val(localStorage.getItem("hour_16"));
-$("#hour_17 #text").val(localStorage.getItem("hour_17"));
+  for (let i = 0; i < 9; i++) {
+    const h = i + 9;
+    let textbox = $('#hour_' + h).find('#text');
+    textbox.val(localStorage.getItem("hour_" + h));
+  };
 
 // time color change. CSS already has selector .past  .present .future
 //initial thought process is based on current time, the textarea class 'description' needs to be substituted by the past/present/future class */
